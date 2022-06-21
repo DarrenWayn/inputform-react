@@ -1,0 +1,31 @@
+// reset styles
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+hr {
+    border: 0;
+    border-top: 1px dotted #efefef;
+}
+
+img {
+    max-width: 100%;
+}
+
+.app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
