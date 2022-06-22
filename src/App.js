@@ -3,7 +3,7 @@ import FormInput from './components/FormInput';
 
 function App() {
   const [values, setValues] = useState({
-    username: '',
+    fullname: '',
     email: '',
     birthday: '',
     password: '',
@@ -13,31 +13,24 @@ function App() {
   const inputs = [
     {
       id: 1,
-      name: 'birthday',
+      name: 'fullname',
       type: 'text',
-      placeholder: 'Birthday',
-      label: 'Birthday',
+      placeholder: 'Full Name',
+      label: 'Full name',
     },
     {
       id: 2,
-      name: 'Username',
-      type: 'text',
-      placeholder: 'Username',
-      label: 'Username',
-    },
-    {
-      id: 2,
-      name: 'Email',
+      name: 'email',
       type: 'text',
       placeholder: 'Email',
       label: 'Email',
     },
     {
       id: 3,
-      name: 'Fullname',
-      type: 'text',
-      placeholder: 'Full Name',
-      label: 'Fulllname',
+      name: 'birthday',
+      type: 'date',
+      placeholder: 'Birthday',
+      label: 'Birthday',
     },
     {
       id: 4,
@@ -48,24 +41,37 @@ function App() {
     },
     {
       id: 5,
-      name: 'ConfirmPassword',
+      name: 'confirmPassword',
       type: 'text',
       placeholder: 'Confirm Password',
-      label: 'ConfirmPassword',
+      label: 'Confirm Password',
     },
   ]
   const submithandler = (e) => {
     e.prevent.default()
   }
+
+  const onChange = (e) => {
+     setValues({...values, [e.target.name]: e.target.value})
+  }
+
+  console.log(values)
   return (
     <>
       <div className= 'container'>
         <div className="App">
           <form onSubmit={submithandler}> 
+          <h1>Apply Now</h1>
               {inputs.map((input => {
-                return <FormInput key={input.id} {...input} value={values[input.name]}/>
+                return (
+                  <FormInput 
+                    key={input.id} {...input} 
+                    value={values[input.name]} 
+                    onChange={onChange}
+                  />
+                )
               }))}
-            <button>Submit</button>
+            <button>Apply</button>
           </form>
         </div>
       </div>

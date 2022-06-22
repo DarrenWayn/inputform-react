@@ -1,12 +1,20 @@
-.FormInput {
+form {
+    background-color: white;
     padding: 1rem;
 
-    input {
-        padding: 1rem;
-        border-radius: 1rem;
-        -webkit-border-radius: 1rem;
-        -moz-border-radius: 1rem;
-        -ms-border-radius: 1rem;
-        -o-border-radius: 1rem;
+    .FormInput {
+        width: 20rem;
+        display: flex;
+        flex-direction: column;
+        
+        input {
+            padding: 1rem;
+            margin: 1rem 0rem;
+            border-radius: 1rem;
+            -webkit-border-radius: 1rem;
+            -moz-border-radius: 1rem;
+            -ms-border-radius: 1rem;
+            -o-border-radius: 1rem;
+        }
     }
 }

@@ -1,11 +1,12 @@
 import React from 'react'
 
 const FormInput = (props) => {
+  const {label, onChange, id, ...inputProps} = props
   return (
     <div className='FormInput'>
+        <label>{label}</label>
         <input
-            placeholder={props.placeholder} 
-            name={props.name}
+          {...inputProps} onChange={onChange}
          /> 
     </div> 
   ) 

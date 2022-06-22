@@ -22,19 +22,32 @@ img {
   max-width: 100%;
 }
 
-.App {
+.container {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   background-color: #FAF3E3;
 }
+.container h1 {
+  color: black;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
 
-.FormInput {
+form {
+  background-color: white;
   padding: 1rem;
 }
-.FormInput input {
+form .FormInput {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+}
+form .FormInput input {
   padding: 1rem;
+  margin: 1rem 0rem;
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
@@ -43,9 +56,18 @@ img {
 }
 
 button {
-  padding: 1rem 4.1rem;
+  width: 100%;
+  height: 3.5rem;
+  padding: 1rem;
+  border: none;
+  background-color: lightgray;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
   border-radius: 1rem;
-  margin: 1rem;
 }
 button:hover {
   background-color: #1A4D2E;
@@ -55,7 +77,6 @@ button:hover {
   -ms-transition: 800ms;
   -o-transition: 800ms;
   cursor: pointer;
-  font-size: 1.5rem;
-  padding: 0.7rem 3.1rem;
+  font-size: 1.7rem;
   color: #EEE;
 }
