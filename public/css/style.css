@@ -38,7 +38,9 @@ img {
 
 form {
   background-color: white;
-  padding: 1rem;
+  padding-inline: 2.5rem;
+  border-radius: 2rem;
+  box-shadow: 6px 10px 13px 0px rgba(0, 0, 0, 0.53);
 }
 form .FormInput {
   width: 20rem;
@@ -54,10 +56,35 @@ form .FormInput input {
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
 }
+form .FormInput label {
+  font-size: 1rem;
+  color: #6B7280;
+}
+form .FormInput span {
+  font-size: 0.7rem;
+  padding: 0.2rem;
+  margin-top: -1rem;
+  margin-bottom: 0.7rem;
+  color: red;
+  display: none;
+}
+form .FormInput input:invalid[focused=true] {
+  border: 2px solid red;
+}
+form .FormInput input:invalid[focused=true] ~ span {
+  display: block;
+}
+
+.finishRegister {
+  background-color: white;
+  padding: 2.5rem 4.5rem;
+  border-radius: 2rem;
+  box-shadow: 6px 10px 13px 0px rgba(0, 0, 0, 0.53);
+}
 
 button {
   width: 100%;
-  height: 3.5rem;
+  height: 4rem;
   padding: 1rem;
   border: none;
   background-color: lightgray;
