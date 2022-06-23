@@ -22,14 +22,14 @@ img {
   max-width: 100%;
 }
 
-.container {
+.App {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   background-color: #FAF3E3;
 }
-.container h1 {
+.App h1 {
   color: black;
   padding-top: 2rem;
   padding-bottom: 2rem;

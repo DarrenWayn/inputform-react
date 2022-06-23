@@ -1,26 +1,45 @@
-import React, { useState } from 'react'
+import React from 'react'
+import useForm from './useForm'
 
-const FormInput = (props) => {
-  const [focused, setFocused] = useState(false)
-  const {label, onChange, errorMessage, id, ...inputProps} = props
+const FormInput = ({ submitForm }) => {
+  const {
+    submithandler,
+    inputs,
+    values,
+    focused,
+    focusHandler,
+    setFocused,
+    onChange,
+  } = useForm({submitForm})
 
-  const focusHandler = (e) => {
-    setFocused(true)
-  }
   return (
-    <div className='FormInput'>
-        <label>{label}</label>
-        <input
-          {...inputProps} 
-          onChange={onChange}
-          onBlur={focusHandler}
-          onFocus={
-            () => inputProps.name==='confirmPassword' && setFocused(true)
-          }
-          focused={focused.toString()}
-         /> 
-         <span>{errorMessage}</span>
-    </div> 
+    <form onSubmit={submithandler}> 
+        <h1>Register</h1>
+            {inputs.map((input => {
+              return (
+                <div className='FormInput'>
+                <label>{input.label}</label>
+                <input
+                  key={input.id}
+                  {...input}
+                  value={values[input.name]}
+                  onChange={onChange}
+                  onBlur={focusHandler}
+                  onFocus={() =>
+                    input.name === input.confirmPassword && setFocused(true)
+                  }
+                  focused={focused.toString()} 
+                /> 
+                <span>{input.errorMessage}</span>
+                </div> 
+              )
+            }))}
+          <button
+            type="submit"
+          >
+            Submit
+          </button>
+        </form>
   ) 
 }
 
