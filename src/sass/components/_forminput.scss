@@ -9,20 +9,20 @@ form {
         display: flex;
         flex-direction: column;
 
+        @include xxs {
+            width: auto;
+        }
         @include xs {
-            width: 13rem;
+            width: auto;
         }
-    
-        @include md {
-            width: 20rem;
+        @include sm {
+            width: 17rem;
         }
-    
         @include lg {
-            width: 20rem;
+            width: 17rem;
         }
-        
         @include xl {
-            width: 20rem;
+            width: 17rem;
         }
         
         input {

@@ -28,21 +28,10 @@ img {
     align-items: center;
     justify-content: center;
     background-color: #FAF3E3;
-
-    @include xs {
-        height: 250vh;
-    }
-
-    @include md {
-        height: 100vh;
-    }
-
-    @include lg {
-        height: 100vh;
-    }
+    height: auto;
     
-    @include xl {
-        height: 100vh;
+    @include xs {
+        height: 160vh;
     }
     
     h1 {
