@@ -1,19 +1,31 @@
-import React, { useState } from 'react'
-import FinishRegister from './FinishRegister';
-import FormInput from './FormInput';
+import React from 'react'
+import FormSuccess from './FormSuccess';
+import Input from './Input';
+import useForm from './useForm';
 
 const Form = () => {
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const {
+    isSubmitted,
+    handleSubmit,
+    values,
+    inputs,
+    onChange
+  } = useForm()
 
-  const submitForm = () => {
-    setIsSubmitted(true);
-  }
   return (
     <>
         {!isSubmitted ? (
-            <FormInput submitForm={submitForm} />
+            <Input 
+              handleSubmit={handleSubmit}
+              values={values}
+              inputs={inputs}
+              onChange={onChange}
+            />
         ) : (
-            <FinishRegister />
+            <FormSuccess 
+              values={values}
+              inputs={inputs}
+            />
         )}
     </>
   )

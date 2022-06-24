@@ -1,0 +1,6 @@
+.formSuccess {
+  background-color: white;
+  padding: 2.5rem 4.5rem;
+  border-radius: 2rem;
+  box-shadow: 6px 10px 13px 0px rgba(0, 0, 0, 0.53);
+}

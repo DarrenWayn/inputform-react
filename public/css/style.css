@@ -42,12 +42,12 @@ form {
   border-radius: 2rem;
   box-shadow: 6px 10px 13px 0px rgba(0, 0, 0, 0.53);
 }
-form .FormInput {
+form .formInput {
   width: 20rem;
   display: flex;
   flex-direction: column;
 }
-form .FormInput input {
+form .formInput input {
   padding: 1rem;
   margin: 1rem 0rem;
   border-radius: 1rem;
@@ -56,11 +56,11 @@ form .FormInput input {
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
 }
-form .FormInput label {
+form .formInput label {
   font-size: 1rem;
   color: #6B7280;
 }
-form .FormInput span {
+form .formInput span {
   font-size: 0.7rem;
   padding: 0.2rem;
   margin-top: -1rem;
@@ -68,14 +68,14 @@ form .FormInput span {
   color: red;
   display: none;
 }
-form .FormInput input:invalid[focused=true] {
+form .formInput input:invalid[focused=true] {
   border: 2px solid red;
 }
-form .FormInput input:invalid[focused=true] ~ span {
+form .formInput input:invalid[focused=true] ~ span {
   display: block;
 }
 
-.finishRegister {
+.formSuccess {
   background-color: white;
   padding: 2.5rem 4.5rem;
   border-radius: 2rem;
