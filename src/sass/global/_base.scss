@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     font-family: 'Fira Sans', sans-serif;
+    background-color: #FAF3E3;
 }
 
 a {
@@ -28,10 +29,18 @@ img {
     align-items: center;
     justify-content: center;
     background-color: #FAF3E3;
-    height: auto;
-    
+
     @include xs {
         height: 160vh;
+    }
+    @include sm {
+        height: 120vh;
+    }
+    @include lg {
+        height: 120vh;
+    }
+    @include xl {
+        height: 120vh;
     }
     
     h1 {
