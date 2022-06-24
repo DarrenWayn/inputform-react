@@ -3,11 +3,27 @@ form {
     padding-inline: 2.5rem;
     border-radius: 2rem;
     box-shadow: 6px 10px 13px 0px rgba(0,0,0,0.53);
+    width: auto;
     
     .formInput {
-        width: 20rem;
         display: flex;
         flex-direction: column;
+
+        @include xs {
+            width: 13rem;
+        }
+    
+        @include md {
+            width: 20rem;
+        }
+    
+        @include lg {
+            width: 20rem;
+        }
+        
+        @include xl {
+            width: 20rem;
+        }
         
         input {
             padding: 1rem;

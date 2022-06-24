@@ -26,8 +26,27 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   background-color: #FAF3E3;
+}
+@media (min-width: 280px) {
+  .App {
+    height: 250vh;
+  }
+}
+@media (min-width: 720px) {
+  .App {
+    height: 100vh;
+  }
+}
+@media (min-width: 960px) {
+  .App {
+    height: 100vh;
+  }
+}
+@media (min-width: 1200px) {
+  .App {
+    height: 100vh;
+  }
 }
 .App h1 {
   color: black;
@@ -41,11 +60,31 @@ form {
   padding-inline: 2.5rem;
   border-radius: 2rem;
   box-shadow: 6px 10px 13px 0px rgba(0, 0, 0, 0.53);
+  width: auto;
 }
 form .formInput {
-  width: 20rem;
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 280px) {
+  form .formInput {
+    width: 13rem;
+  }
+}
+@media (min-width: 720px) {
+  form .formInput {
+    width: 20rem;
+  }
+}
+@media (min-width: 960px) {
+  form .formInput {
+    width: 20rem;
+  }
+}
+@media (min-width: 1200px) {
+  form .formInput {
+    width: 20rem;
+  }
 }
 form .formInput input {
   padding: 1rem;

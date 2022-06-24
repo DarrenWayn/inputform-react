@@ -27,8 +27,23 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     background-color: #FAF3E3;
+
+    @include xs {
+        height: 250vh;
+    }
+
+    @include md {
+        height: 100vh;
+    }
+
+    @include lg {
+        height: 100vh;
+    }
+    
+    @include xl {
+        height: 100vh;
+    }
     
     h1 {
         color: black;
