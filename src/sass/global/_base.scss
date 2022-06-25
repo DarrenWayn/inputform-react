@@ -30,16 +30,16 @@ img {
     background-color: #FAF3E3;
 
     @include xs {
-        height: 160vh;
+        min-height: 160vh;
     }
     @include sm {
-        height: 120vh;
+        min-height: 120vh;
     }
     @include lg {
-        height: 120vh;
+        min-height: 120vh;
     }
     @include xl {
-        height: 120vh;
+        min-height: 120vh;
     }
     
     h1 {
