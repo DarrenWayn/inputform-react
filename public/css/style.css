@@ -27,25 +27,12 @@ img {
   align-items: center;
   justify-content: center;
   background-color: #FAF3E3;
+  min-height: 130vh;
+  width: 100vw;
 }
 @media (min-width: 280px) {
   .App {
-    min-height: 160vh;
-  }
-}
-@media (min-width: 370px) {
-  .App {
-    min-height: 120vh;
-  }
-}
-@media (min-width: 960px) {
-  .App {
-    min-height: 120vh;
-  }
-}
-@media (min-width: 1200px) {
-  .App {
-    min-height: 120vh;
+    min-height: 100vh;
   }
 }
 .App h1 {
