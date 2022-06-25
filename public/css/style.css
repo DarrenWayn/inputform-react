@@ -65,17 +65,17 @@ form .formInput {
 }
 @media (min-width: 370px) {
   form .formInput {
-    width: 17rem;
+    width: 20rem;
   }
 }
 @media (min-width: 960px) {
   form .formInput {
-    width: 17rem;
+    width: 22rem;
   }
 }
 @media (min-width: 1200px) {
   form .formInput {
-    width: 17rem;
+    width: 25rem;
   }
 }
 form .formInput input {

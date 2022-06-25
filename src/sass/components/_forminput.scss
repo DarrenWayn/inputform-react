@@ -16,13 +16,13 @@ form {
             width: auto;
         }
         @include sm {
-            width: 17rem;
+            width: 20rem;
         }
         @include lg {
-            width: 17rem;
+            width: 22rem;
         }
         @include xl {
-            width: 17rem;
+            width: 25rem;
         }
         
         input {
